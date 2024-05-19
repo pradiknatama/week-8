@@ -17,26 +17,32 @@ module.exports = {
       {
         first_name: 'John',
         last_name: 'Doe',
+        age:2,
         createdAt:new Date(),
         updatedAt: new Date(),
       },{
         first_name: 'alfian',
         last_name: 'pradiknatama',
+        age:2,
+
         createdAt:new Date(),
         updatedAt: new Date(),
       },{
         first_name: 'alfian',
         last_name: 'tama',
+        age:2,
         createdAt:new Date(),
         updatedAt: new Date(),
       },{
         first_name: 'pradikna',
         last_name: 'tama',
+        age:2,
         createdAt:new Date(),
         updatedAt: new Date(),
       },{
         first_name: 'talitha',
         last_name: 'binar',
+        age:2,
         createdAt:new Date(),
         updatedAt: new Date(),
       }

@@ -12,6 +12,27 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
+    await queryInterface.bulkInsert('Film_Categories', [
+      {
+        film_id: 1,
+        category_id: 1,
+
+        createdAt:new Date(),
+        updatedAt: new Date(),
+      },{
+        film_id: 1,
+        category_id: 2,
+
+        createdAt:new Date(),
+        updatedAt: new Date(),
+      },{
+        film_id: 3,
+        category_id: 1,
+
+        createdAt:new Date(),
+        updatedAt: new Date(),
+      },
+    ], {});
   },
 
   async down (queryInterface, Sequelize) {

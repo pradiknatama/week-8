@@ -5,6 +5,7 @@ const FilmController =require("../controllers/filmController");
 
 
 // router.post('/',FilmController.create);
+router.get('/cat',FilmController.getRelasi);
 router.get('/',FilmController.get);
 router.get('/:id',FilmController.getOne);
 

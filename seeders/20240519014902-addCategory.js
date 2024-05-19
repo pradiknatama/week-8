@@ -12,6 +12,22 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
+    await queryInterface.bulkInsert('Categories', [
+      {
+        name: 'Horror',
+        createdAt:new Date(),
+        updatedAt: new Date(),
+      },{
+        name: 'Comedy',
+        createdAt:new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        name: 'anime',
+        createdAt:new Date(),
+        updatedAt: new Date(),
+      },
+    ], {});
   },
 
   async down (queryInterface, Sequelize) {
