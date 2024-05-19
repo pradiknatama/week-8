@@ -11,7 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Film.hasMany(models.FilmCategory,{foreignKey:film_id});
+      // Film.hasMany(models.FilmCategory,{foreignKey:film_id});
+      Film.hasMany(models.FilmCategory, {foreignKey: "film_id"});
 
     }
   }
@@ -23,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     rental_duration: DataTypes.INTEGER,
     rental_rate: DataTypes.INTEGER,
     length: DataTypes.INTEGER,
-    replacement_cost: DataTypes.INTEGER,
+    // replacement_cost: DataTypes.INTEGER,
     rating: DataTypes.INTEGER,
     special_features: DataTypes.STRING,
     fulltext: DataTypes.STRING,

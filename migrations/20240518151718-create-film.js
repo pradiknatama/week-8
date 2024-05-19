@@ -2,7 +2,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('films', {
+    await queryInterface.createTable('Film', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -31,9 +31,9 @@ module.exports = {
       length: {
         type: Sequelize.INTEGER
       },
-      replacement_cost: {
-        type: Sequelize.INTEGER
-      },
+      // replacement_cost: {
+      //   type: Sequelize.INTEGER
+      // },
       rating: {
         type: Sequelize.INTEGER
       },
@@ -54,6 +54,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('films');
+    await queryInterface.dropTable('Film');
   }
 };

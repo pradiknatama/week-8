@@ -13,7 +13,7 @@ module.exports = {
      * }], {});
     */
     // seeder untuk menambahkan actor (soal no1 ) 
-     await queryInterface.bulkInsert('actors', [
+     await queryInterface.bulkInsert('Actors', [
       {
         first_name: 'John',
         last_name: 'Doe',
